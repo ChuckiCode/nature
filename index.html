@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100%;
+        }
+
+        #introContainer {
+            background-color: white;
+            position: relative;
+        }
+
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        h2 {
+            font-size: 35px;
+            margin: auto;
+            color: whitesmoke;
+            background-color: rgba(0, 0, 0, 0.491);
+            backdrop-filter: blur(6px);
+            padding: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-attachment: fixed;
+        }
+
+        h3 {
+            font-size: 26px;
+        }
+
+        section {
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .smokeGlass {
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.668);
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .smokeGlass:hover {
+            background-color: rgba(0, 0, 0, 0.968);
+            transition: 1s ease-out;
+        }
+
+        #rainForest {
+            background-image: url('https://wallpaperaccess.com/full/126015.jpg');
+        }
+
+        #snow {
+            background-image: url('https://wallpapercave.com/wp/Zyq8yST.jpg');
+        }
+
+        #oceanNature {
+
+            background-image: url('https://i.pinimg.com/originals/14/cd/1f/14cd1fcf05ad082e4c93d19cc7cc3896.jpg');
+        }
+
+        #desertNature {
+
+            background-image: url('https://i.pinimg.com/originals/b2/68/3e/b2683ec25ab930213d11dcfc8824d0ff.png');
+        }
+
+        article {
+            width: 90%;
+            margin: auto;
+            height: fit-content;
+            color: whitesmoke;
+            font-size: larger;
+        }
+
+        article aside {
+            margin-top: 10px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button {
+            width: 100px;
+            height: 40px;
+            border-radius: 4px;
+            border: none;
+            background-color: rgb(225, 225, 225);
+            color: rgb(35, 35, 35);
+        }
+
+        @media screen and (max-width: 600px) {
+            #introContainer {
+                height: fit-content;
+            }
+
+            #smokeGlass {
+                width: 75%;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            article {
+                font-size: smaller;
+            }
+
+            button {
+                width: 60px;
+                height: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section id="introContainer">
+        <img src="https://blogs-images.forbes.com/ceciliarodriguez/files/2018/08/1.jpg" class="fade mySlides " alt=""
+            width="100%" height="100%">
+        <img src="https://photographylife.com/wp-content/uploads/2018/02/Puffin-Photo.jpg" class="fade mySlides " alt=""
+            width="100%" height="100%">
+        <img src="https://www.expeditionsalaska.com/wp-content/uploads/2016/09/12_sep9205.jpg" class="fade mySlides "
+            alt="" width="100%" height="100%">
+        <img src="https://m.psecn.photoshelter.com/img-get/I0000cHSaK2yh37I/s/1200/I0000cHSaK2yh37I.jpg"
+            class="fade mySlides " alt="" width="100%">
+    </section>
+    <section id="rainForest">
+        <div class="smokeGlass firstGlass">
+            <article id="frstArticle">
+                <h3>Subtitle</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut distinctio quibusdam minima ipsam
+                    asperiores vel modi aspernatur, ad odit dolorum, natus placeat. Voluptas molestiae rem incidunt
+                    possimus mollitia, sit fugiat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati,
+                    dolorum! Molestias quo ullam, numquam sapiente sunt, iusto velit nihil, error omnis fugiat aliquid
+                    corporis iste iure ducimus? Facilis, repudiandae aliquid!</p><br>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut saepe ipsa nostrum at accusamus nobis
+                    possimus ad fugiat, iure veritatis consequatur aspernatur quae, a culpa obcaecati voluptatem est
+                    deleniti optio?</p>
+                <aside>
+                    <button id="forstBtn">MORE</button>
+                </aside>
+            </article>
+        </div>
+        <h2>Forest landscape</h2>
+    </section>
+
+    <section id="snow">
+        <h2>Snow landscape</h2>
+        <div class="smokeGlass secondGlass">
+            <article id="snowArticle">
+                <h3>Subtitle</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut distinctio quibusdam minima ipsam
+                    asperiores vel modi aspernatur, ad odit dolorum, natus placeat. Voluptas molestiae rem incidunt
+                    possimus mollitia, sit fugiat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati,
+                    dolorum! Molestias quo ullam, numquam sapiente sunt, iusto velit nihil, error omnis fugiat aliquid
+                    corporis iste iure ducimus? Facilis, repudiandae aliquid!</p><br>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut saepe ipsa nostrum at accusamus nobis
+                    possimus ad fugiat, iure veritatis consequatur aspernatur quae, a culpa obcaecati voluptatem est
+                    deleniti optio?</p>
+                <aside>
+                    <button id="snowBtn">MORE</button>
+                </aside>
+            </article>
+        </div>
+    </section>
+
+    <section id="oceanNature">
+        <div class="smokeGlass thrdGlass">
+            <article id="oceanArticle">
+                <h3>Subtitle</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut distinctio quibusdam minima ipsam
+                    asperiores vel modi aspernatur, ad odit dolorum, natus placeat. Voluptas molestiae rem incidunt
+                    possimus mollitia, sit fugiat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati,
+                    dolorum! Molestias quo ullam, numquam sapiente sunt, iusto velit nihil, error omnis fugiat aliquid
+                    corporis iste iure ducimus? Facilis, repudiandae aliquid!</p><br>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut saepe ipsa nostrum at accusamus nobis
+                    possimus ad fugiat, iure veritatis consequatur aspernatur quae, a culpa obcaecati voluptatem est
+                    deleniti optio?</p>
+                <aside>
+                    <button id="oceanBtn">MORE</button>
+                </aside>
+            </article>
+        </div>
+        <h2>Ocean landscape</h2>
+    </section>
+    <section id="desertNature">
+        <h2>Desert landscape</h2>
+        <div class="smokeGlass frthGlass">
+            <article id="desrtArticle">
+                <h3>Subtitle</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut distinctio quibusdam minima ipsam
+                    asperiores vel modi aspernatur, ad odit dolorum, natus placeat. Voluptas molestiae rem incidunt
+                    possimus mollitia, sit fugiat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati,
+                    dolorum! Molestias quo ullam, numquam sapiente sunt, iusto velit nihil, error omnis fugiat aliquid
+                    corporis iste iure ducimus? Facilis, repudiandae aliquid!</p><br>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut saepe ipsa nostrum at accusamus nobis
+                    possimus ad fugiat, iure veritatis consequatur aspernatur quae, a culpa obcaecati voluptatem est
+                    deleniti optio?</p>
+                <aside>
+                    <button id="desrtBtn">MORE</button>
+                </aside>
+            </article>
+        </div>
+    </section>
+    <script>
+        var slideIndex = 0;
+        showSlides()
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName('mySlides');
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = 'none';
+
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 4000); // Change image every 2 seconds
+        }
+
+
+        const forstBtn = document.querySelector('#forstBtn').addEventListener('click', function glassGrow() {
+            let firstGlass = document.querySelector('.firstGlass').style.width = '100%';
+            let frstArticle = document.querySelector('#frstArticle').style.display = 'none';
+
+        });
+        const snowBtn = document.querySelector('#snowBtn').addEventListener('click', function glassGrow() {
+            let secondGlass = document.querySelector('.secondGlass').style.width = '100%';
+            let snowArticle = document.querySelector('#snowArticle').style.display = 'none';
+        });
+        const oceanBtn = document.querySelector('#oceanBtn').addEventListener('click', function glassGrow() {
+            let thrdGlass = document.querySelector('.thrdGlass').style.width = '100%';
+            let oceanArticle = document.querySelector('#oceanArticle').style.display = 'none';
+        });
+        const desrtBtn = document.querySelector('#desrtBtn').addEventListener('click', function glassGrow() {
+            let frthGlass = document.querySelector('.frthGlass').style.width = '100%';
+            let desrtArticle = document.querySelector('#desrtArticle').style.display = 'none';
+        });
+    </script>
+</body>
+
+</html>
